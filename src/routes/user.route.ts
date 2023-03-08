@@ -6,6 +6,7 @@ import { userType } from "../zod.schema/zod.user";
 
 let router = express.Router();
 router.post("/",validate(userType), createUser);
-router.post("/", Log);
+router.get("/", Log);
+
 
 export default router;
